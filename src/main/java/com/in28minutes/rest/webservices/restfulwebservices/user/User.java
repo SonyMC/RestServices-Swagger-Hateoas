@@ -2,6 +2,7 @@ package com.in28minutes.rest.webservices.restfulwebservices.user;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.Null;
 import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Size;

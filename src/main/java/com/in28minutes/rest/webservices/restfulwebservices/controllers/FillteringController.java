@@ -17,6 +17,7 @@ import com.in28minutes.rest.webservices.restfulwebservices.samplebeans.SampleFil
 public class FillteringController {
 	
 	
+	// E.g of Dynamic Filtering
 	// only send field 1 and field 2
 	@GetMapping("/filter")
 	public MappingJacksonValue retrieveSampleFilterBean(){
@@ -42,7 +43,7 @@ public class FillteringController {
 
 	
 	
-	// ony send field 1
+	// only send field 1
 	@GetMapping("/filterlist")
 	public MappingJacksonValue retrieveSampleFilterBeanList(){
 		

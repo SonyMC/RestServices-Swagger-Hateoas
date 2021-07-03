@@ -23,6 +23,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -30,9 +31,22 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-hateoas</artifactId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+		
+<!-- Get xml representation for resources 	- Note : Does not work well with other features 	
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>		
+
+
+-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId> <!-- Use this if you want to validate input -->
@@ -50,24 +64,25 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-	
-	
-	
+
+<!--  Does not work !!! 
+   		<dependency>
+      		<groupId>org.springdoc</groupId>
+      		<artifactId>springdoc-openapi-ui</artifactId>
+      		<version>1.5.9</version>
+   		</dependency>
+   		
+-->	   		
+		
+   			
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 		</dependency>
+		
 	
-<!-- 	
-		 <dependency>
-           <groupId>io.springfox</groupId>
-           <artifactId>springfox-boot-starter</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        
-  -->	       
- 
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>

@@ -105,7 +105,7 @@ public class SwaggerConfig {
 	
 
 	
-//	//These methods are optional and can be used intead of using default values above
+	//These methods are optional and can be used intead of using default values above
 //    @Bean
 //    public Docket postsApi() {
 //        return new Docket(DocumentationType.SWAGGER_2)

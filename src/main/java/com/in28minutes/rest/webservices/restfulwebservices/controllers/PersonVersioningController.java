@@ -26,13 +26,13 @@ public class PersonVersioningController {
 	
 	
 	
-	// param versioning which uses param value ( /params?version=nnn) for different versions of the service 
+	// param versioning which uses param value ( /param?version=nnn) for different versions of the service 
 	@GetMapping(value="/person/params", params="version=1")
 	public PersonV1 paramV1(){
 		return new PersonV1("Amitabh Bachan");
 	}
 	
-	// param versioning which uses param value ( /params?version=nnn) for different versions of the service 
+	// param versioning which uses param value ( /param?version=nnn) for different versions of the service 
 	@GetMapping(value="/person/params", params="version=2")
 	public PersonV2 paramV2(){
 		return new PersonV2(new Name("Jackie","Chan"));
@@ -50,13 +50,13 @@ public class PersonVersioningController {
 		return new PersonV2(new Name("Jackie","Chan"));
 	}
 		
-	// produces versioning which uses produces value ( /headers and supply values in header using postman or some other tool) for different versions of the service 
+	// produces versioning which uses produces value ( Add Header 'Accept' with value 'application/Sony.app-v1+json' ) 
 	@GetMapping(value="/person/produces", produces="application/Sony.app-v1+json")
 	public PersonV1 producesV1(){
 		return new PersonV1("Amitabh Bachan");
 	}
 	
-	// produces versioning which uses produces value ( /headers and supply values in header using postman or some other tool) for different versions of the service 
+	// produces versioning which uses produces value ( Add Header 'Accept' with value 'application/Sony.app-v2+json' ) 
 	@GetMapping(value="/person/produces", produces="application/Sony.app-v2+json")
 	public PersonV2 producesV2(){
 		return new PersonV2(new Name("Jackie","Chan"));

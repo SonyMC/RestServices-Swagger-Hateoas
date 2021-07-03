@@ -120,7 +120,7 @@ public class UserResourceController {
 		Link linkto = linkTo(methodOn(this.getClass()).retrieveAllUsers()).withSelfRel();
 		
 	
-		// The add method is inherirted from the RepresentationModel class which was inherited bu User class
+		// The add method is inherirted from the RepresentationModel class which was inherited by User class
 		modelUser.add(linkto.withRel("all-users"));
 				
 
